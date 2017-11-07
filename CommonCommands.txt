@@ -1,0 +1,61 @@
+提交
+git add <filename.xx>   
+git commit -m "<commit contents>"
+
+查看状态
+git status
+git diff
+git log
+git lg 自定义的分支查看图...
+
+使用版本库的内容替换工作区的内容
+git checkout
+
+更改版本
+git reset --hard HEAD^
+git reset --hard <commit id>
+git reflog
+
+撤销修改
+git checkout --file 撤销工作区修改 
+git reset HEAD file 撤销暂存区修改
+撤销版本修改,见上一条
+
+删除文件
+git rm file
+git checkout --file 撤销删除
+
+远程库
+git remote add origin <path>
+git push -u origin <name> 第一次创建远程库
+git push origin <name> 推送
+git clone <path>
+git remote
+
+分支
+git checkout -b <name>  
+git checkout -d <name>  
+git checkout <name> 
+git branch
+git branch <name>
+git merge dev
+git merge --no-ff -m "<content>" <name>
+git stash
+git stash list
+git stash apply stash@{<num>}
+git stash apply
+git stash pop
+git stash drop
+git branch -d <name>
+git branch -D <name> 强制删除未合并的分支
+git pull
+git push origin dev
+
+标签
+git tag <tag name>
+git tag <tag name> <commit id>
+git tag -a <tag name> -m "<description words>" <commit id>
+git show <tag name>
+git tag -d <tag name>
+git push origin <tag name>
+git push origin --tags
